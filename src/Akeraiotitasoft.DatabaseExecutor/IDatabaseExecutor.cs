@@ -52,7 +52,7 @@ namespace Akeraiotitasoft.DatabaseExecutor
             where T6 : class, new()
             where T7 : class, new();
 
-        Tuple<List<T1>, List<T2>, List<T3>, List<T4>, List<T5>, List<T6>, List<T7>, TDatabaseReader> ExecuteStoredProcedure<T1, T2, T3, T4, T5, T6, T7, TDatabaseReader>(string connectionString, string storedProcedureName, params IDataParameter[] args)
+        DisposableTuple<List<T1>, List<T2>, List<T3>, List<T4>, List<T5>, List<T6>, List<T7>, TDatabaseReader> ExecuteStoredProcedure<T1, T2, T3, T4, T5, T6, T7, TDatabaseReader>(string connectionString, string storedProcedureName, params IDataParameter[] args)
             where T1 : class, new()
             where T2 : class, new()
             where T3 : class, new()

@@ -188,11 +188,6 @@ namespace Akeraiotitasoft.DatabaseExecutor
             foreach (IDataParameter parameter in args) command.Parameters.Add(parameter);
             return command.ExecuteNonQuery();
         }
-
-        Tuple<List<T1>, List<T2>, List<T3>, List<T4>, List<T5>, List<T6>, List<T7>, TDatabaseReader> IDatabaseExecutor.ExecuteStoredProcedure<T1, T2, T3, T4, T5, T6, T7, TDatabaseReader>(string connectionString, string storedProcedureName, params IDataParameter[] args)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
 
